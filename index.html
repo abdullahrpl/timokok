@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJsqJ5vpc9xCZjzpNU2bfisrtABiouqx13fw&s">
     <title>Okok Team</title>
     <style>
       /* Hero Section */
@@ -27,6 +28,11 @@
         padding: 1rem;
         display: flex;
         justify-content: space-around;
+      }
+
+      .navbar ul li a:hover{
+        position: static;
+        font-weight: bold;
       }
 
       .nav-title {
@@ -75,6 +81,7 @@
 
       .banner-title .okok a {
         color: grey;
+        transition: 0.5s;
       }
 
       .banner-title .okok a:hover {
@@ -261,6 +268,7 @@
       /* Footer Section */
       .footer {
         background-color: #f5f5f5;
+        height: 30vh;
       }
       .footer-content {
         padding-top: 100px;
@@ -279,13 +287,8 @@
         font-weight: 600;
         transition: color 0.3s ease;
       }
-      .footer-links a:hover {
-        font-size: 1.1em;
-        color: black;
-        text-shadow: 0 0 5px #1006d5, 0 0 10px #1006d5, 0 0 15px #1006d5;
-        transition: font-size 0.3s, text-shadow 0.3s;
-      }
-
+     
+      
       .footer-links a::after {
         content: "";
         position: absolute;
@@ -293,7 +296,7 @@
         bottom: -2px;
         width: 0;
         height: 2px;
-        background: #1006d5;
+        background: #068cd5;
         transition: width 0.3s, left 0.3s;
       }
       .footer-links a:hover::after {
@@ -315,7 +318,6 @@
       .copyright {
         text-align: center;
         margin-top: 40px;
-        margin-bottom: 10px;
         font-size: 0.9em;
       }
       .animate-fade-in {
@@ -359,7 +361,7 @@
   <body>
     <section class="hero">
       <div class="navbar">
-        <div class="nav-title"><a href="#">Okok.com</a></div>
+        <div class="nav-title"><a href="index.html">Okok.com</a></div>
         <div class="nav-link">
           <ul>
             <li><a href="#">Home</a></li>
@@ -374,7 +376,7 @@
         <div class="banner-title">
           <p>#OkokTeam</p>
           <h1>Hola 👋 Bienvenido A La Web De</h1>
-          <h1 class="okok"><a href="#">Okok.com</a></h1>
+          <h1 class="okok"><a href="index.html">Okok.com</a></h1>
         </div>
         <div class="banner-img">
           <img

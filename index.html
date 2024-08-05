@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style: none;
-      }
       /* Hero Section */
 
       /* About Section */
@@ -21,9 +14,64 @@
       /* Footer Section */
       .footer {
         background-color: aliceblue;
-        padding: 40px;
+        padding: 40px 0px;
         color: #333;
       }
+
+      .footer-cotent{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .footer-links ul{
+        list-style: none;
+        padding: 0;
+        gap: 20px;
+      }
+
+      .footer-links a{
+        color: #333;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 15px;
+        transition: color 0.3s ease;
+        transition: size 0.8s ease;
+      }
+
+      /* animation */
+      .footer-links a:hover {
+        color: #007bff;
+        font-weight: 800;
+        transition: size 0.8s ease;
+        font-size: 20px;
+        }
+        /* sosial */
+        .footer-sosial {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sosial-icon img{
+            width: 30px;
+            height: 30px;
+            transition: transform 0.5s ease;
+        }
+        
+        /* animation */
+        .sosial-icon:hover img{
+        transform: scale(1.2);
+        }
+
+        .copyright {
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        }
+
+        
     </style>
   </head>
   <body>

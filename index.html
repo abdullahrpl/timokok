@@ -31,7 +31,6 @@
       }
 
       .navbar ul li a:hover{
-        position: static;
         font-weight: bold;
       }
 
@@ -41,7 +40,18 @@
       }
 
       .nav-title a {
+        font-size: 20px;
         color: black;
+        transition: size color 0.8s ease;
+        transition: 0.8s;
+      }
+
+      .nav-title a:hover{
+        font-weight: bold;
+        color: #068cd5;
+        font-size: 22px;
+        transition: size color 0.8s ease;
+        transition: 0.8s;
       }
 
       .nav-link ul {
@@ -52,9 +62,29 @@
       }
 
       .nav-link a {
+        position: relative;
         color: black;
         font-weight: 500;
         margin: 0 15px;
+        transition: width 0.3s ease;
+      }
+
+
+
+      .nav-link a::after {
+        transition: 0.8s;
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background: #068cd5;
+        transition: width 0.3s, left 0.3s;
+      }
+      .nav-link a:hover::after {
+        width: 100%;
+        left: 0;
       }
 
       .banner {

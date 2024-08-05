@@ -97,19 +97,77 @@
       /* hero section end */
 
       /* About Section */
-
+    .about{
+        width: 100vw;
+        height: 70vh;
+    }
+    .about-title{
+        display: flex;
+        justify-content: space-around;
+        font-weight: 600;
+        font-size: x-large;
+    }
+    .about-content{
+        padding-top: 40px;
+        padding-left: 260px;
+        padding-right: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: large;
+    }
       /* About Section End */
 
       /* Project Section */
     .project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100vw;
         height: 100vh;
         margin: 1rem;
         padding: 1rem;
     }
+    .card{
+        display: flex;
+        justify-content: center;
+    }
     .p-tittle h1{
         font-size: 30px;
-        margin-left: 9.5%;
+        margin-left: 8%;
+    }
+    .card-img{
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    .card-img img{
+        position: absolute;
+        width: 100%;
+    }
+    .card-body{
+        padding: 1.5rem;
+    }
+    .card-tittle{
+        font-size: 1.25rem;
+        line-height: 1.33;
+        font-weight: 700;
+        padding: 1.5rem;
+    }
+    .card-1{
+        border-radius: 8%;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 300px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        max-width: 100%;
+        background-color: white;
+        width: 35%;
+        margin-top: 5%;
+        margin-left: 8%;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
     }
       /* Project Section End */
 
@@ -240,14 +298,53 @@
         </div>
       </div>
     </section>
-    <section class="about"></section>
+    <section class="about">
+      <div class="about-title">About us</div>
+            <div class="about-content">
+            <ul>
+                <p>Our Full j Developer team consists of highly skilled professionals who excel in both front-end and back-end development. With expertise in various programming languages, frameworks, and tools, we handle complex, multi-faceted projects. We create seamless, user-friendly interfaces while ensuring robust, secure, and scalable server-side solutions. Our team members are proficient in technologies like HTML, CSS, JavaScript, Python, Node.js, Ruby, and Java, along with databases like SQL and NoSQL. We also leverage cloud services like AWS and Azure to deliver comprehensive solutions.</p>
+                <br>
+                <p>Collaboration is key to our team's success. We work closely with designers, project managers, and stakeholders to ensure our solutions meet high standards and align with client goals. Embracing Agile methodologies, we stay flexible and responsive to changing project needs. Our team is committed to continuous learning and skill enhancement. This dedication to delivering end-to-end solutions that drive success distinguishes us as a dynamic and reliable Full Stack Developer team.</p>
+            </ul>
+        </div>
+    </section>
     <section class="project">
         <div class="p-tittle">
             <h1>Our Project</h1>
         </div>
-        <div class="card-1">
-            <h2>Okok.com</h2>
-            <p>This is our </p>
+        <div class="card">
+            <div class="card-1">
+                <div class="card-tittle">
+                    <h2>Okok.com</h2>
+                </div>
+                <div class="card-img">
+                    <img src="img/okokbanner.png" width="500">
+                </div>
+                <div class="card-body">
+                    <p>Okok.com is a agency web that we made for help many <br>people on  web programming and application problem</p>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="card-tittle">
+                    <h2>Okok.com</h2>
+                </div>
+                <div class="card-img">
+                    <img src="img/okokbanner.png" width="500">
+                </div>
+                <div class="card-body">
+                    <p>Okok.com is a agency web that we made for help many <br>people on  web programming and application problem</p>
+                </div>
+            <div class="card-1">
+                <div class="card-tittle">
+                    <h2>Okok.com</h2>
+                </div>
+                <div class="card-img">
+                    <img src="img/okokbanner.png" width="500">
+                </div>
+                <div class="card-body">
+                    <p>Okok.com is a agency web that we made for help many <br>people on  web programming and application problem</p>
+                </div>
+        </div>
         </div>
     </section>
     <section class="footer">
